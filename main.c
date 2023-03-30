@@ -3,13 +3,17 @@
 #include <string.h>
 
 /**
-    @returns void
- *   @param const int width
- *   @param const int height
- *   @param int array
+ * @Brief вывод 2d массива
  *
- * @note
- * Prints '\\n' in the end.
+ * @details
+ * После вывода массива, добавляет '\\n'
+ *
+ * @param height - высота массивов
+ * @param width - ширина массива
+ * @param arr - массив
+ *
+ * @returns void
+ *
  */
 void print2dArray(const int height, const int width, int array[height][width]) {
     for (int i = 0; i < height; i++) {
@@ -22,6 +26,17 @@ void print2dArray(const int height, const int width, int array[height][width]) {
 }
 
 
+
+/**
+ * @Brief заполнение 2d массива числами от 0 до 99
+ *
+ * @param height - высота массивов
+ * @param width - ширина массива
+ * @param arr - массив
+ *
+ * @returns void
+ *
+ */
 void populate2dArray(const int height, const int width, int array[height][width]) {
     for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
@@ -32,12 +47,13 @@ void populate2dArray(const int height, const int width, int array[height][width]
 
 
 /**
+ * @brief Отражение матрицы по вертикали
  *
- \n Отражение матрицы по вертикали
- *   @returns void
- *   @param const int width
- *   @param const int height
- *   @param int array
+ * @param height - высота массивов
+ * @param width - ширина массива
+ * @param arr - массив
+ *
+ * @returns void
  *
  */
 void flipVertical2dArray(const int height, const int width, int array[height][width]) {
@@ -57,13 +73,13 @@ void flipVertical2dArray(const int height, const int width, int array[height][wi
 }
 
 /**
+ * @brief Отражение матрицы по горизонтали
  *
- \n Отражение матрицы по горизонтали
+ * @param height - высота массивов
+ * @param width - ширина массива
+ * @param arr - массив
  *
- *   @returns void
- *   @param const int width
- *   @param const int height
- *   @param int array
+ * @returns void
  *
  */
 void flipHorizontal2dArray(const int height, const int width, int array[height][width]) {
@@ -87,23 +103,19 @@ void flipHorizontal2dArray(const int height, const int width, int array[height][
 
 
 /**
+ * @brief Транспозиция 2d массива
  *
- * @param &height
- * @param &width
- * @param int array
- *
- @note
- * This function switches height and width
- * so when it's done,
- * height = width, and
+ * @details
+ * Эта функция меняет местами height и width.
+ * height = width
  * width = height
- @Transposition_example
  *
- \n         1 2 3 4 => 1 4 7
- \n         4 5 6 0 => 2 5 8
- \n         7 8 9 1 => 3 6 9
- \n     ---------   => 4 0 1
-
+ * @param height - указатель но высоту массива
+ * @param width - указатель но ширину массива
+ * @param arr - массив
+ *
+ * @returns void
+ *
  */
 void transpose2dArray(int *height, int *width, int array[*height][*width]) {
 
@@ -130,19 +142,22 @@ void transpose2dArray(int *height, int *width, int array[*height][*width]) {
 }
 
 /**
+ * @brief Поворот 2d массива на 90 градусов
  *
- * @param &height
- * @param &width
- * @param int array
- * @param int howManyTimes
+ * @details
+ * Эта функция поменяет местами height и width,
+ * если поворот был на 90 или 270.
+ * height = width
+ * width = height
+ * Отрицательное число означает поворот против часовой стрелки.
  *
- @note
- * This function may switch height and width places
- * when rotation is either 90 deg or -90 deg; \n
- * So when it's done:
- \n  height = width
- \n  width = height.
-
+ * @param height - указатель но высоту массива
+ * @param width - указатель но ширину массива
+ * @param arr - массив
+ * @param howManyTimes - сколько раз повернуть.
+ *
+ * @returns void
+ *
  */
 void rotate90(int *height, int *width, int array[*height][*width], int howManyTimes) {
 
