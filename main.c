@@ -8,7 +8,7 @@
  * @details
  * После вывода массива, добавляет '\\n'
  *
- * @param height - высота массивов
+ * @param height - высота массива
  * @param width - ширина массива
  * @param arr - массив
  *
@@ -30,7 +30,7 @@ void print2dArray(const int height, const int width, int array[height][width]) {
 /**
  * @Brief заполнение 2d массива числами от 0 до 99
  *
- * @param height - высота массивов
+ * @param height - высота массива
  * @param width - ширина массива
  * @param arr - массив
  *
@@ -49,7 +49,7 @@ void populate2dArray(const int height, const int width, int array[height][width]
 /**
  * @brief Отражение матрицы по вертикали
  *
- * @param height - высота массивов
+ * @param height - высота массива
  * @param width - ширина массива
  * @param arr - массив
  *
@@ -75,7 +75,7 @@ void flipVertical2dArray(const int height, const int width, int array[height][wi
 /**
  * @brief Отражение матрицы по горизонтали
  *
- * @param height - высота массивов
+ * @param height - высота массива
  * @param width - ширина массива
  * @param arr - массив
  *
