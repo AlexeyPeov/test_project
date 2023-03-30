@@ -8,7 +8,7 @@
  * @details
  * После вывода массива, добавляет '\\n'
  *
- * @param height - высота массивов
+ * @param height - высота массива
  * @param width - ширина массива
  * @param arr - массив
  *
